@@ -3,8 +3,20 @@
 <head> 
     <title>Getting Started: Serving Web Content</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="http://snapsvg.io/assets/js/prism.js"></script>
+    <script src="http://snapsvg.io/assets/js/snap.svg-min.js"></script>
+    <script>
+        var S;
+        window.onload = function () {
+            var s = Snap(850, 600);
+            var bigCircle = s.circle(150, 150, 100);
+            }
+    </script>
 </head>
 <body>
+    <script src="../js/myScript.js"></script>
     <p th:text="'Hello, ' + ${name} + '!'" />
+    <button id="demo" onclick="myFunction()">Click me</button>
+    
 </body>
 </html>
